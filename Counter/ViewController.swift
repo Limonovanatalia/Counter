@@ -11,7 +11,8 @@ class ViewController: UIViewController {
 
     var counter = 0
     
-    @IBOutlet weak var textChangeLabel: UITextField!
+    @IBOutlet weak var textChangeLabel: UILabel!
+    
     @IBOutlet weak var changeButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
