@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-fU-JQa">
-                                <rect key="frame" x="93" y="678" width="218" height="60"/>
+                                <rect key="frame" x="38" y="601" width="116" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="TOUCH ME"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+1"/>
                                 <connections>
                                     <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2vC-pY-eU5"/>
                                 </connections>
@@ -32,12 +32,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOI-cY-dvg">
+                                <rect key="frame" x="246" y="601" width="116" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-1"/>
+                                <connections>
+                                    <action selector="minusCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b1O-bm-zvH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="changeButton" destination="Meh-fU-JQa" id="0AE-x9-7uK"/>
+                        <outlet property="minusButton" destination="yOI-cY-dvg" id="xlr-Te-zly"/>
+                        <outlet property="plusButton" destination="Meh-fU-JQa" id="dRh-fx-zCX"/>
                         <outlet property="textChangeLabel" destination="Cx6-QC-jax" id="Wq9-iS-kCb"/>
                     </connections>
                 </viewController>

@@ -13,13 +13,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textChangeLabel: UILabel!
     
-    @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var plusButton: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         change()
         textChangeLabel.tintColor = .lightGray
         textChangeLabel.textColor = .blue
+        plusButton.tintColor = .red
+        minusButton.tintColor = .blue
         }
     func change () {
         textChangeLabel.text = "ЗНАЧЕНИЕ СЧЁТЧИКА: \(counter)"
@@ -29,6 +33,12 @@ class ViewController: UIViewController {
         counter += 1
         change()
     }
+    @IBAction func minusCountButton(_ sender: Any) {
+        if counter > 0 {counter -= 1}
+        change()
+    }
+
+
 }
     
 
